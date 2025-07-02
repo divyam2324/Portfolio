@@ -4,7 +4,7 @@ This is the personal portfolio website of **Divyam Lavri**, an IT student and as
 
 ## 🔗 Live Demo
 
-**View the live portfolio here:** [https://portfolio-qloatx7ll-divyams-projects-3a14c9ee.vercel.app/](https://portfolio-qloatx7ll-divyams-projects-3a14c9ee.vercel.app/))
+**View the live portfolio here:** [https://portfolio-1-neon-three.vercel.app/](https://portfolio-1-neon-three.vercel.app/)
 
 ---
 
