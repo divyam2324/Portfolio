@@ -1,10 +1,15 @@
-# Divyam Lavri - Portfolio Website
+# 🌐 Divyam Lavri - Portfolio Website
 
-This is the personal portfolio website of **Divyam Lavri**, an IT student and aspiring cloud engineer & mobile app developer. It showcases personal projects, skills, education, experience, and contact information in a clean and animated design.
+This is the personal portfolio website of **Divyam Lavri**, an IT student and aspiring **cloud engineer & mobile app developer**. It showcases personal projects, skills, education, experience, and contact information in a clean and animated design.
 
-## 🔗 Live Demo
+---
 
-**View the live portfolio here:** [https://portfolio-1-neon-three.vercel.app/](https://portfolio-1-neon-three.vercel.app/)
+## 🔗 Live Demos
+
+- **Vercel**: [https://portfolio-1-neon-three.vercel.app/](https://portfolio-1-neon-three.vercel.app/)
+- **AWS S3**: [http://divyamtestweb.s3-website-us-east-1.amazonaws.com/](http://divyamtestweb.s3-website-us-east-1.amazonaws.com/) *(Note: HTTP only)*
+
+> 📌 Hosted on both Vercel and AWS S3 to demonstrate frontend deployment and cloud infrastructure capabilities.
 
 ---
 
@@ -64,16 +69,39 @@ portfolio/
 
 ---
 
-## 🚀 Deployment
+## 🚀 Deployment Instructions
 
-This site is deployed using [Vercel](https://vercel.com/):
+### 🔷 Vercel Hosting
 
-1. Push your code to GitHub
-2. Connect the repository on Vercel
-3. Set the root folder and deploy
-4. Vercel provides a live URL instantly
+1. Push your code to a GitHub repository  
+2. Connect the repo to [Vercel](https://vercel.com/)  
+3. Choose the root directory (if needed)  
+4. Click **Deploy**  
+5. Get a live URL instantly  
 
----
+### ☁️ AWS S3 Static Website Hosting
+
+> Step-by-step deployment via AWS Management Console
+
+1. Created a new S3 bucket named `divyamtestweb`
+2. Uploaded all website files (HTML, CSS, JS, images)
+3. Enabled **Static Website Hosting** under bucket properties
+4. Set `index.html` as the entry point
+5. Applied this **Bucket Policy** to make the site public:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicReadGetObject",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::divyamtestweb/*"
+    }
+  ]
+}
 
 ## 📧 Contact
 
